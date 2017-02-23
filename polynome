@@ -1,0 +1,20 @@
+from math import *
+
+print("Trouver les racines d'un polynome du second degré")
+print("polynome = a*(x*x)+b*x+c")
+a=float(input("a="))
+b=float(input("b="))
+c=float(input("c="))
+discriminant = (b**2)-(4*a*c)
+print ("discriminant=",discriminant)
+y=sqrt(discriminant)
+if discriminant>0:
+    X1=((-b-y)/(2*a))
+    X2=((-b+y)/(2*a))
+    print("les racines sont:")
+    print("X1=",X1)
+    print("X2=",X2)
+if discriminant == 0:
+    X1=(-b/2*a)
+    print("la racine est:")
+    print("X1=",X1)
